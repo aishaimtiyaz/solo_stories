@@ -1,0 +1,1022 @@
+[
+  {
+    "id": 1,
+    "emoji": "☕",
+    "title": "Coffee Reflection Date",
+    "effort": "low",
+    "mood": "cozy",
+    "duration": "30 min",
+    "budget": "₹100-300",
+    "description": "Enjoy a coffee while spending intentional time with your thoughts.",
+    "steps": [
+      "Visit a nearby café",
+      "Order your favorite coffee",
+      "Stay off social media for 15 minutes",
+      "Observe your surroundings",
+      "Write one thought or idea"
+    ]
+  },
+  {
+    "id": 2,
+    "emoji": "📚",
+    "title": "Reading in Bed",
+    "effort": "low",
+    "mood": "cozy",
+    "duration": "45 min",
+    "budget": "₹0-50",
+    "description": "Curl up with a good book and your favorite blanket for a peaceful afternoon.",
+    "steps": [
+      "Pick a comfortable spot",
+      "Grab your current book or a new one",
+      "Make tea or hot chocolate",
+      "Read for at least 30 minutes",
+      "Note your favorite passage"
+    ]
+  },
+  {
+    "id": 3,
+    "emoji": "🎧",
+    "title": "Music Discovery Session",
+    "effort": "low",
+    "mood": "peaceful",
+    "duration": "1 hour",
+    "budget": "₹0",
+    "description": "Listen to new music, explore new artists, and create a personal playlist.",
+    "steps": [
+      "Open your favorite music app",
+      "Search for a new artist recommendation",
+      "Listen to an entire album",
+      "Save 3-5 favorite tracks",
+      "Create or update a playlist"
+    ]
+  },
+  {
+    "id": 4,
+    "emoji": "🌿",
+    "title": "Plant Care Session",
+    "effort": "low",
+    "mood": "calming",
+    "duration": "20 min",
+    "budget": "₹0-200",
+    "description": "Water your plants, repot one, and spend time in nature at home.",
+    "steps": [
+      "Check soil moisture in each plant",
+      "Water plants that need it",
+      "Wipe down leaves with a soft cloth",
+      "Talk to your plants",
+      "Repot a plant if needed"
+    ]
+  },
+  {
+    "id": 5,
+    "emoji": "📖",
+    "title": "Journal Writing",
+    "effort": "low",
+    "mood": "reflective",
+    "duration": "30 min",
+    "budget": "₹0-100",
+    "description": "Write freely in your journal about your day, dreams, or feelings.",
+    "steps": [
+      "Find a quiet space",
+      "Grab your journal and pen",
+      "Write without judgment",
+      "Reflect on three gratitudes",
+      "Set an intention for tomorrow"
+    ]
+  },
+  {
+    "id": 6,
+    "emoji": "🍰",
+    "title": "Baking Your Favorite Treat",
+    "effort": "low",
+    "mood": "fun",
+    "duration": "1 hour",
+    "budget": "₹100-300",
+    "description": "Bake something delicious and enjoy the aroma and taste of homemade goodness.",
+    "steps": [
+      "Choose a simple recipe",
+      "Gather all ingredients",
+      "Prep your workspace",
+      "Bake mindfully",
+      "Enjoy with tea or coffee"
+    ]
+  },
+  {
+    "id": 7,
+    "emoji": "🚶",
+    "title": "Solo Walk in the Park",
+    "effort": "low",
+    "mood": "peaceful",
+    "duration": "45 min",
+    "budget": "₹0",
+    "description": "Take a peaceful walk, observe nature, and clear your mind.",
+    "steps": [
+      "Choose a nearby park or trail",
+      "Leave your phone on silent",
+      "Walk at a comfortable pace",
+      "Notice three beautiful things",
+      "Sit on a bench and breathe"
+    ]
+  },
+  {
+    "id": 8,
+    "emoji": "🎨",
+    "title": "Doodling or Sketching",
+    "effort": "low",
+    "mood": "creative",
+    "duration": "30 min",
+    "budget": "₹0-50",
+    "description": "Create art without pressure, just for the joy of it.",
+    "steps": [
+      "Get paper and pencils or markers",
+      "Set no expectations",
+      "Draw freely for 20 minutes",
+      "Color or shade your creation",
+      "Display it somewhere visible"
+    ]
+  },
+  {
+    "id": 9,
+    "emoji": "🧘",
+    "title": "Yoga or Stretching",
+    "effort": "low",
+    "mood": "calm",
+    "duration": "20 min",
+    "budget": "₹0",
+    "description": "Follow a gentle yoga video or stretch at home.",
+    "steps": [
+      "Find a yoga video online",
+      "Prepare your space with a mat",
+      "Follow the session mindfully",
+      "End with deep breathing",
+      "Rest in meditation for 5 minutes"
+    ]
+  },
+  {
+    "id": 10,
+    "emoji": "🎬",
+    "title": "Movie Marathon",
+    "effort": "low",
+    "mood": "cozy",
+    "duration": "2-3 hours",
+    "budget": "₹0-200",
+    "description": "Watch your favorite movies back-to-back with snacks and blankets.",
+    "steps": [
+      "Choose 2-3 favorite films",
+      "Make popcorn or snacks",
+      "Create a cozy setup",
+      "Turn off notifications",
+      "Enjoy the marathon"
+    ]
+  },
+  {
+    "id": 11,
+    "emoji": "🎵",
+    "title": "Karaoke Night",
+    "effort": "low",
+    "mood": "fun",
+    "duration": "1 hour",
+    "budget": "₹0",
+    "description": "Sing your heart out to your favorite songs at home.",
+    "steps": [
+      "Find a karaoke app or YouTube videos",
+      "Warm up your voice",
+      "Pick your favorite songs",
+      "Sing with full energy",
+      "Record a video if you're brave"
+    ]
+  },
+  {
+    "id": 12,
+    "emoji": "🍜",
+    "title": "Cook a New Recipe",
+    "effort": "low",
+    "mood": "creative",
+    "duration": "1 hour",
+    "budget": "₹200-500",
+    "description": "Try cooking a new dish you've always wanted to make.",
+    "steps": [
+      "Find an interesting recipe",
+      "Gather all ingredients",
+      "Follow the recipe step-by-step",
+      "Plate it beautifully",
+      "Photograph and savor your meal"
+    ]
+  },
+  {
+    "id": 13,
+    "emoji": "💅",
+    "title": "Self-Pampering Session",
+    "effort": "low",
+    "mood": "relaxing",
+    "duration": "1 hour",
+    "budget": "₹0-200",
+    "description": "Do your nails, face mask, and other self-care rituals at home.",
+    "steps": [
+      "Gather your skincare products",
+      "Apply a face mask",
+      "Do your nails",
+      "Take a relaxing bath",
+      "Apply your favorite lotion"
+    ]
+  },
+  {
+    "id": 14,
+    "emoji": "📝",
+    "title": "Write a Letter to Your Future Self",
+    "effort": "low",
+    "mood": "reflective",
+    "duration": "30 min",
+    "budget": "₹0-50",
+    "description": "Write thoughtful words to read in a year from now.",
+    "steps": [
+      "Get paper and a nice pen",
+      "Write a letter to your future self",
+      "Include hopes and dreams",
+      "Seal it in an envelope",
+      "Date it and set a reminder to read it"
+    ]
+  },
+  {
+    "id": 15,
+    "emoji": "🎮",
+    "title": "Gaming Session",
+    "effort": "low",
+    "mood": "fun",
+    "duration": "1-2 hours",
+    "budget": "₹0",
+    "description": "Play your favorite video games without any interruptions.",
+    "steps": [
+      "Turn off notifications",
+      "Grab a snack and water",
+      "Launch your game",
+      "Play for at least an hour",
+      "Celebrate your achievements"
+    ]
+  },
+  {
+    "id": 16,
+    "emoji": "🌅",
+    "title": "Sunrise or Sunset Watching",
+    "effort": "low",
+    "mood": "peaceful",
+    "duration": "45 min",
+    "budget": "₹0",
+    "description": "Wake early or stay late to witness the beauty of the sky.",
+    "steps": [
+      "Check sunrise or sunset time",
+      "Go to a good viewing spot",
+      "Bring a blanket or chair",
+      "Watch the colors change",
+      "Take a moment to breathe"
+    ]
+  },
+  {
+    "id": 17,
+    "emoji": "🧩",
+    "title": "Puzzle or Brain Teaser",
+    "effort": "low",
+    "mood": "engaging",
+    "duration": "1 hour",
+    "budget": "₹0-100",
+    "description": "Work on a jigsaw puzzle or brain teaser game.",
+    "steps": [
+      "Set up your puzzle",
+      "Put on background music",
+      "Sort pieces by color or edge",
+      "Work mindfully on sections",
+      "Complete and frame it"
+    ]
+  },
+  {
+    "id": 18,
+    "emoji": "📸",
+    "title": "Photo Walk",
+    "effort": "low",
+    "mood": "creative",
+    "duration": "1 hour",
+    "budget": "₹0",
+    "description": "Walk around with your phone or camera capturing interesting moments.",
+    "steps": [
+      "Choose a neighborhood to explore",
+      "Take 50+ photos",
+      "Find unique angles and lighting",
+      "Edit your favorites",
+      "Share or create a collage"
+    ]
+  },
+  {
+    "id": 19,
+    "emoji": "🌸",
+    "title": "Flower Arrangement",
+    "effort": "low",
+    "mood": "creative",
+    "duration": "30 min",
+    "budget": "₹100-300",
+    "description": "Create a beautiful flower arrangement for your space.",
+    "steps": [
+      "Pick or buy fresh flowers",
+      "Find a vase",
+      "Clean the stems",
+      "Arrange them artfully",
+      "Place in a special spot"
+    ]
+  },
+  {
+    "id": 20,
+    "emoji": "🎪",
+    "title": "Stand-up Comedy Show at Home",
+    "effort": "low",
+    "mood": "fun",
+    "duration": "1 hour",
+    "budget": "₹0",
+    "description": "Watch your favorite comedians perform on streaming platforms.",
+    "steps": [
+      "Browse comedy specials online",
+      "Make your favorite snacks",
+      "Settle into a comfortable spot",
+      "Watch without distractions",
+      "Laugh and feel good"
+    ]
+  },
+  {
+    "id": 21,
+    "emoji": "🏃",
+    "title": "Solo Jogging Session",
+    "effort": "moderate",
+    "mood": "energetic",
+    "duration": "45 min",
+    "budget": "₹0",
+    "description": "Run or jog around your neighborhood while listening to podcasts.",
+    "steps": [
+      "Put on running clothes and shoes",
+      "Start with a warm-up walk",
+      "Jog at a comfortable pace",
+      "Listen to a podcast or music",
+      "Cool down and stretch"
+    ]
+  },
+  {
+    "id": 22,
+    "emoji": "🏖️",
+    "title": "Beach Day Alone",
+    "effort": "moderate",
+    "mood": "peaceful",
+    "duration": "3-4 hours",
+    "budget": "₹0-500",
+    "description": "Spend a day at the beach reading, swimming, or just relaxing.",
+    "steps": [
+      "Pack sunscreen and a towel",
+      "Bring a book or music",
+      "Swim or paddle in the water",
+      "Build sandcastles or collect shells",
+      "Watch the sunset"
+    ]
+  },
+  {
+    "id": 23,
+    "emoji": "🛍️",
+    "title": "Solo Shopping Spree",
+    "effort": "moderate",
+    "mood": "fun",
+    "duration": "2-3 hours",
+    "budget": "₹500-2000",
+    "description": "Go shopping for yourself without rushing or feeling obligated.",
+    "steps": [
+      "Make a list of what you want",
+      "Try on different items",
+      "Buy something for yourself",
+      "Get coffee at the mall",
+      "Come home feeling refreshed"
+    ]
+  },
+  {
+    "id": 24,
+    "emoji": "🏠",
+    "title": "Home Renovation Project",
+    "effort": "moderate",
+    "mood": "productive",
+    "duration": "2-3 hours",
+    "budget": "₹200-1000",
+    "description": "Rearrange furniture, repaint a wall, or redecorate a room.",
+    "steps": [
+      "Plan your changes",
+      "Gather materials",
+      "Move furniture around",
+      "Paint or decorate",
+      "Step back and admire"
+    ]
+  },
+  {
+    "id": 25,
+    "emoji": "💻",
+    "title": "Learn Something New Online",
+    "effort": "moderate",
+    "mood": "focused",
+    "duration": "1-2 hours",
+    "budget": "₹0-500",
+    "description": "Take an online course or tutorial on something that interests you.",
+    "steps": [
+      "Choose a course topic",
+      "Find a platform like Udemy or Coursera",
+      "Watch lectures mindfully",
+      "Take notes",
+      "Practice what you learned"
+    ]
+  },
+  {
+    "id": 26,
+    "emoji": "🚴",
+    "title": "Cycling Adventure",
+    "effort": "moderate",
+    "mood": "adventurous",
+    "duration": "1-2 hours",
+    "budget": "₹0",
+    "description": "Explore your city or countryside on a bike.",
+    "steps": [
+      "Check your bike is in good condition",
+      "Plan a route",
+      "Bring water and a snack",
+      "Ride at your own pace",
+      "Stop to rest and enjoy the view"
+    ]
+  },
+  {
+    "id": 27,
+    "emoji": "📚",
+    "title": "Library Exploration",
+    "effort": "moderate",
+    "mood": "peaceful",
+    "duration": "2 hours",
+    "budget": "₹0",
+    "description": "Spend hours exploring the library and discovering new books.",
+    "steps": [
+      "Visit your local library",
+      "Browse different sections",
+      "Pick 3-5 books randomly",
+      "Find a cozy corner to read",
+      "Check them out and go home"
+    ]
+  },
+  {
+    "id": 28,
+    "emoji": "🎪",
+    "title": "Museum or Art Gallery Visit",
+    "effort": "moderate",
+    "mood": "cultured",
+    "duration": "2-3 hours",
+    "budget": "₹100-500",
+    "description": "Explore art, history, or science at a museum or gallery.",
+    "steps": [
+      "Check what's on display",
+      "Go at a quiet time",
+      "Spend time with pieces you love",
+      "Take notes on your thoughts",
+      "Visit the gift shop"
+    ]
+  },
+  {
+    "id": 29,
+    "emoji": "🌳",
+    "title": "Hiking Adventure",
+    "effort": "moderate",
+    "mood": "adventurous",
+    "duration": "2-3 hours",
+    "budget": "₹0-200",
+    "description": "Trek up a local trail and immerse yourself in nature.",
+    "steps": [
+      "Research a beginner-friendly trail",
+      "Pack water and snacks",
+      "Wear comfortable shoes",
+      "Take photos of the view",
+      "Have a picnic at the top"
+    ]
+  },
+  {
+    "id": 30,
+    "emoji": "🎭",
+    "title": "Theater or Film Festival",
+    "effort": "moderate",
+    "mood": "cultured",
+    "duration": "2-4 hours",
+    "budget": "₹200-800",
+    "description": "Attend a play, film, or cultural performance.",
+    "steps": [
+      "Book your tickets",
+      "Dress up a bit",
+      "Arrive early",
+      "Enjoy the performance fully",
+      "Reflect on it over dinner"
+    ]
+  },
+  {
+    "id": 31,
+    "emoji": "🎸",
+    "title": "Music Lesson or Practice",
+    "effort": "moderate",
+    "mood": "focused",
+    "duration": "1-2 hours",
+    "budget": "₹0-500",
+    "description": "Learn or practice playing a musical instrument.",
+    "steps": [
+      "Pick your instrument",
+      "Find a tutorial online or get a teacher",
+      "Practice scales or chords",
+      "Learn a new song",
+      "Record yourself"
+    ]
+  },
+  {
+    "id": 32,
+    "emoji": "🍽️",
+    "title": "Dinner at a New Restaurant",
+    "effort": "moderate",
+    "mood": "fun",
+    "duration": "1-2 hours",
+    "budget": "₹500-1500",
+    "description": "Try a new restaurant cuisine and taste something different.",
+    "steps": [
+      "Research restaurants online",
+      "Make a reservation",
+      "Dress up a bit",
+      "Order something adventurous",
+      "Savor each bite"
+    ]
+  },
+  {
+    "id": 33,
+    "emoji": "📖",
+    "title": "Bookstore Browsing",
+    "effort": "moderate",
+    "mood": "peaceful",
+    "duration": "1-2 hours",
+    "budget": "₹200-500",
+    "description": "Spend time in a bookstore with coffee finding your next read.",
+    "steps": [
+      "Visit your favorite bookstore",
+      "Grab a coffee",
+      "Browse different genres",
+      "Read first chapters",
+      "Buy one book that calls to you"
+    ]
+  },
+  {
+    "id": 34,
+    "emoji": "🧘",
+    "title": "Meditation Retreat",
+    "effort": "moderate",
+    "mood": "calm",
+    "duration": "2-3 hours",
+    "budget": "₹0-300",
+    "description": "Do a guided meditation session or meditation app challenge.",
+    "steps": [
+      "Find a meditation app or video",
+      "Sit in a comfortable position",
+      "Follow the guided meditation",
+      "Journal your experience",
+      "Practice daily"
+    ]
+  },
+  {
+    "id": 35,
+    "emoji": "🎨",
+    "title": "Painting or Drawing Class",
+    "effort": "moderate",
+    "mood": "creative",
+    "duration": "2-3 hours",
+    "budget": "₹300-1000",
+    "description": "Take an online or in-person art class.",
+    "steps": [
+      "Find an art class online",
+      "Gather your materials",
+      "Follow the instructor",
+      "Create your masterpiece",
+      "Frame and display it"
+    ]
+  },
+  {
+    "id": 36,
+    "emoji": "🌍",
+    "title": "Virtual Travel Experience",
+    "effort": "moderate",
+    "mood": "adventurous",
+    "duration": "1-2 hours",
+    "budget": "₹0-200",
+    "description": "Take a virtual tour of cities around the world.",
+    "steps": [
+      "Choose a destination",
+      "Use Google Earth or virtual tours",
+      "Explore museums virtually",
+      "Research travel tips",
+      "Plan a real trip someday"
+    ]
+  },
+  {
+    "id": 37,
+    "emoji": "🚗",
+    "title": "Road Trip to Nearby Town",
+    "effort": "moderate",
+    "mood": "adventurous",
+    "duration": "4-5 hours",
+    "budget": "₹500-1500",
+    "description": "Drive to a nearby town and explore what you find.",
+    "steps": [
+      "Choose a direction to drive",
+      "Pack snacks and water",
+      "Drive without a strict itinerary",
+      "Stop at interesting places",
+      "Try local food"
+    ]
+  },
+  {
+    "id": 38,
+    "emoji": "🎬",
+    "title": "Filmmaking or Video Project",
+    "effort": "moderate",
+    "mood": "creative",
+    "duration": "2-3 hours",
+    "budget": "₹0-100",
+    "description": "Create a short video or film on your phone.",
+    "steps": [
+      "Brainstorm a story idea",
+      "Write a script",
+      "Record video clips",
+      "Edit with an app",
+      "Share on social media"
+    ]
+  },
+  {
+    "id": 39,
+    "emoji": "🧗",
+    "title": "Rock Climbing or Bouldering",
+    "effort": "moderate",
+    "mood": "adventurous",
+    "duration": "1-2 hours",
+    "budget": "₹200-500",
+    "description": "Challenge yourself at an indoor climbing gym.",
+    "steps": [
+      "Visit a local climbing gym",
+      "Get proper equipment",
+      "Start with beginner routes",
+      "Push yourself safely",
+      "Celebrate your progress"
+    ]
+  },
+  {
+    "id": 40,
+    "emoji": "🍽️",
+    "title": "Farmers Market Exploration",
+    "effort": "moderate",
+    "mood": "fun",
+    "duration": "1-2 hours",
+    "budget": "₹300-800",
+    "description": "Visit a farmers market and buy fresh, local ingredients to cook with.",
+    "steps": [
+      "Find a local farmers market",
+      "Explore different stalls",
+      "Talk to farmers",
+      "Buy seasonal produce",
+      "Cook a farm-to-table meal"
+    ]
+  },
+  {
+    "id": 41,
+    "emoji": "✈️",
+    "title": "Solo Weekend Getaway",
+    "effort": "high",
+    "mood": "adventurous",
+    "duration": "Weekend",
+    "budget": "₹3000-8000",
+    "description": "Plan and execute a weekend trip to a new destination.",
+    "steps": [
+      "Choose a destination within reach",
+      "Book accommodation",
+      "Plan your activities",
+      "Pack and travel",
+      "Document your adventure"
+    ]
+  },
+  {
+    "id": 42,
+    "emoji": "🏔️",
+    "title": "Mountain Trekking",
+    "effort": "high",
+    "mood": "adventurous",
+    "duration": "Full day",
+    "budget": "₹1000-3000",
+    "description": "Trek to a mountain summit and camp if possible.",
+    "steps": [
+      "Choose a beginner-friendly mountain",
+      "Prepare physically",
+      "Pack camping gear",
+      "Start early in the morning",
+      "Camp under the stars"
+    ]
+  },
+  {
+    "id": 43,
+    "emoji": "🤿",
+    "title": "Scuba Diving or Snorkeling",
+    "effort": "high",
+    "mood": "adventurous",
+    "duration": "Full day",
+    "budget": "₹2000-5000",
+    "description": "Explore underwater marine life at a diving spot.",
+    "steps": [
+      "Research diving locations",
+      "Get certified if needed",
+      "Book a tour",
+      "Gear up and dive",
+      "Experience marine biodiversity"
+    ]
+  },
+  {
+    "id": 44,
+    "emoji": "🎭",
+    "title": "Attend a Music Festival",
+    "effort": "high",
+    "mood": "fun",
+    "duration": "Full day",
+    "budget": "₹1000-3000",
+    "description": "Go to a music festival and enjoy multiple performances.",
+    "steps": [
+      "Research upcoming festivals",
+      "Buy tickets",
+      "Plan your outfit",
+      "Go early to explore",
+      "Enjoy multiple bands and artists"
+    ]
+  },
+  {
+    "id": 45,
+    "emoji": "🍳",
+    "title": "Cook a 4-Course Meal",
+    "effort": "high",
+    "mood": "creative",
+    "duration": "3-4 hours",
+    "budget": "₹800-2000",
+    "description": "Challenge yourself by cooking an elaborate multi-course dinner.",
+    "steps": [
+      "Plan your menu",
+      "Gather all ingredients",
+      "Prepare appetizer",
+      "Cook main and sides",
+      "Plate dessert beautifully"
+    ]
+  },
+  {
+    "id": 46,
+    "emoji": "🎨",
+    "title": "Canvas Painting Workshop",
+    "effort": "high",
+    "mood": "creative",
+    "duration": "3-4 hours",
+    "budget": "₹500-1500",
+    "description": "Take a canvas painting workshop or create a large artwork.",
+    "steps": [
+      "Get canvas and paints",
+      "Prepare your workspace",
+      "Sketch your design",
+      "Paint with full creativity",
+      "Let it dry and display"
+    ]
+  },
+  {
+    "id": 47,
+    "emoji": "🌊",
+    "title": "Water Sports Adventure",
+    "effort": "high",
+    "mood": "adventurous",
+    "duration": "Full day",
+    "budget": "₹1500-4000",
+    "description": "Try water sports like surfing, kayaking, or paddleboarding.",
+    "steps": [
+      "Choose your water sport",
+      "Book lessons if needed",
+      "Get proper equipment",
+      "Practice in safe waters",
+      "Progress to more challenging spots"
+    ]
+  },
+  {
+    "id": 48,
+    "emoji": "📸",
+    "title": "Photography Project",
+    "effort": "high",
+    "mood": "creative",
+    "duration": "Full day",
+    "budget": "₹0-500",
+    "description": "Create a photography series on a theme you're passionate about.",
+    "steps": [
+      "Choose a photography theme",
+      "Scout locations",
+      "Take 100+ photos",
+      "Edit your best shots",
+      "Create a photo album or blog"
+    ]
+  },
+  {
+    "id": 49,
+    "emoji": "🏃",
+    "title": "Marathon Training Day",
+    "effort": "high",
+    "mood": "energetic",
+    "duration": "2-3 hours",
+    "budget": "₹0",
+    "description": "Do a long-distance running session as part of your training.",
+    "steps": [
+      "Plan your route",
+      "Warm up properly",
+      "Run long distance",
+      "Stay hydrated",
+      "Cool down and recover"
+    ]
+  },
+  {
+    "id": 50,
+    "emoji": "🎓",
+    "title": "Enroll in an Online Degree",
+    "effort": "high",
+    "mood": "focused",
+    "duration": "Ongoing",
+    "budget": "₹0-10000",
+    "description": "Start pursuing an online degree or certification course.",
+    "steps": [
+      "Research programs",
+      "Apply to a program",
+      "Enroll in classes",
+      "Attend lectures regularly",
+      "Complete assignments"
+    ]
+  },
+  {
+    "id": 51,
+    "emoji": "🌍",
+    "title": "Solo International Trip",
+    "effort": "high",
+    "mood": "adventurous",
+    "duration": "1-2 weeks",
+    "budget": "₹10000-50000",
+    "description": "Travel to a foreign country and experience a new culture.",
+    "steps": [
+      "Plan your destination",
+      "Get travel documents",
+      "Book flights and accommodation",
+      "Research local customs",
+      "Immerse in the culture"
+    ]
+  },
+  {
+    "id": 52,
+    "emoji": "🏠",
+    "title": "DIY Home Renovation",
+    "effort": "high",
+    "mood": "productive",
+    "duration": "2-3 days",
+    "budget": "₹2000-5000",
+    "description": "Take on a major DIY project like tiling, painting, or building furniture.",
+    "steps": [
+      "Plan your project",
+      "Get all materials",
+      "Prep the space",
+      "Execute the project",
+      "Enjoy your new space"
+    ]
+  },
+  {
+    "id": 53,
+    "emoji": "🎪",
+    "title": "Volunteer Work",
+    "effort": "high",
+    "mood": "purposeful",
+    "duration": "Full day",
+    "budget": "₹0-500",
+    "description": "Volunteer at a local shelter, community center, or environmental project.",
+    "steps": [
+      "Find a volunteer opportunity",
+      "Sign up and get trained",
+      "Show up early",
+      "Work with purpose",
+      "Reflect on the impact"
+    ]
+  },
+  {
+    "id": 54,
+    "emoji": "🚴",
+    "title": "Multi-Day Cycling Tour",
+    "effort": "high",
+    "mood": "adventurous",
+    "duration": "2-3 days",
+    "budget": "₹1000-3000",
+    "description": "Do a multi-day cycling tour through scenic routes.",
+    "steps": [
+      "Plan your route",
+      "Prepare your bike",
+      "Pack camping gear",
+      "Cycle daily",
+      "Camp under stars"
+    ]
+  },
+  {
+    "id": 55,
+    "emoji": "🎬",
+    "title": "Make a Short Film",
+    "effort": "high",
+    "mood": "creative",
+    "duration": "1-2 weeks",
+    "budget": "₹0-2000",
+    "description": "Write, shoot, and edit a complete short film.",
+    "steps": [
+      "Write a script",
+      "Assemble crew and cast",
+      "Scout locations",
+      "Film scenes",
+      "Edit and post-produce"
+    ]
+  },
+  {
+    "id": 56,
+    "emoji": "🌲",
+    "title": "Forest Camping Trip",
+    "effort": "high",
+    "mood": "adventurous",
+    "duration": "2-3 days",
+    "budget": "₹500-2000",
+    "description": "Camp in a forest and experience nature at its best.",
+    "steps": [
+      "Choose a camping site",
+      "Get all gear",
+      "Set up camp",
+      "Explore the forest",
+      "Stargaze at night"
+    ]
+  },
+  {
+    "id": 57,
+    "emoji": "📚",
+    "title": "Write a Short Story or Book",
+    "effort": "high",
+    "mood": "creative",
+    "duration": "Ongoing",
+    "budget": "₹0-500",
+    "description": "Start writing and completing your own story or novel.",
+    "steps": [
+      "Brainstorm your story",
+      "Create characters",
+      "Write daily",
+      "Edit and revise",
+      "Share with readers"
+    ]
+  },
+  {
+    "id": 58,
+    "emoji": "🎯",
+    "title": "30-Day Personal Challenge",
+    "effort": "high",
+    "mood": "focused",
+    "duration": "30 days",
+    "budget": "₹0-1000",
+    "description": "Challenge yourself to a 30-day goal like fitness, learning, or art.",
+    "steps": [
+      "Choose your challenge",
+      "Set clear goals",
+      "Track daily progress",
+      "Stay motivated",
+      "Celebrate completion"
+    ]
+  },
+  {
+    "id": 59,
+    "emoji": "🎪",
+    "title": "Attend a Masterclass",
+    "effort": "high",
+    "mood": "focused",
+    "duration": "2-4 hours",
+    "budget": "₹500-2000",
+    "description": "Attend an in-person or virtual masterclass from an expert.",
+    "steps": [
+      "Find a masterclass",
+      "Register for it",
+      "Prepare beforehand",
+      "Attend and take notes",
+      "Apply learnings"
+    ]
+  },
+  {
+    "id": 60,
+    "emoji": "🌟",
+    "title": "Personal Photoshoot",
+    "effort": "high",
+    "mood": "fun",
+    "duration": "2-3 hours",
+    "budget": "₹0-1000",
+    "description": "Have a professional photoshoot session or do a DIY self-portrait shoot.",
+    "steps": [
+      "Plan your theme",
+      "Choose locations",
+      "Wear outfits that make you feel confident",
+      "Take 200+ photos",
+      "Edit and create a portfolio"
+    ]
+  }
+]
