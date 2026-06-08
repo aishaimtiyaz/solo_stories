@@ -62,7 +62,7 @@ export default function SpinnerWheel({
   if (!isClient) {
     return (
       <div className="flex flex-col items-center gap-8 mb-12">
-        <div className="relative w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-purple-100 to-blue-100 rounded-full animate-pulse" />
+        <div className="relative w-64 h-64 md:w-80 md:h-80 bg-linear-to-br from-purple-100 to-blue-100 rounded-full animate-pulse" />
         <button disabled className="px-8 py-4 rounded-full font-bold text-lg bg-gray-400 text-gray-600 cursor-not-allowed">
           SPIN
         </button>
@@ -157,7 +157,7 @@ export default function SpinnerWheel({
         className={`px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 ${
           isSpinning
             ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
-            : 'bg-gradient-to-r from-orange-400 to-orange-500 text-white shadow-lg hover:shadow-xl'
+            : 'bg-linear-to-r from-orange-400 to-orange-500 text-white shadow-lg hover:shadow-xl'
         }`}
       >
         {isSpinning ? 'SPINNING...' : 'SPIN'}

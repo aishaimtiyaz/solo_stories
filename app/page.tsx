@@ -68,7 +68,7 @@ export default function Home() {
   return (
     <div
       className={`min-h-screen transition-colors duration-300 ${
-        isDarkMode ? 'dark bg-gray-950' : 'bg-gradient-to-b from-gray-50 to-blue-50'
+        isDarkMode ? 'dark bg-gray-950' : 'bg-linear-to-b from-gray-50 to-blue-50'
       }`}
     >
       <Header />

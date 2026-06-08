@@ -138,7 +138,7 @@ const shareImage = async () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={shareImage}
-          className="flex-1 px-4 py-3 bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all"
+          className="flex-1 px-4 py-3 bg-linear-to-r from-purple-600 to-purple-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all"
         >
           📥 Download Image
         </motion.button>

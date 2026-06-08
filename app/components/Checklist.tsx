@@ -83,7 +83,7 @@ export default function Checklist({ date, onBack, onShare }: ChecklistProps) {
           initial={{ width: 0 }}
           animate={{ width: `${progressPercent}%` }}
           transition={{ duration: 0.5 }}
-          className="bg-gradient-to-r from-purple-500 to-purple-600 h-full"
+          className="bg-linear-to-r from-purple-500 to-purple-600 h-full"
         />
       </div>
 
@@ -129,7 +129,7 @@ export default function Checklist({ date, onBack, onShare }: ChecklistProps) {
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="bg-gradient-to-r from-yellow-100 to-orange-100 dark:from-yellow-900 dark:to-orange-900 rounded-lg p-6 mb-6 text-center"
+          className="bg-linear-to-r from-yellow-100 to-orange-100 dark:from-yellow-900 dark:to-orange-900 rounded-lg p-6 mb-6 text-center"
         >
           <div className="text-5xl mb-2">🎉</div>
           <p className="text-xl font-bold text-gray-800 dark:text-white">
@@ -154,7 +154,7 @@ export default function Checklist({ date, onBack, onShare }: ChecklistProps) {
           disabled={!allChecked}
           className={`flex-1 px-4 py-3 font-semibold rounded-lg transition-all ${
             allChecked
-              ? 'bg-gradient-to-r from-purple-600 to-purple-500 text-white hover:shadow-lg'
+              ? 'bg-linear-to-r from-purple-600 to-purple-500 text-white hover:shadow-lg'
               : 'bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed'
           }`}
         >

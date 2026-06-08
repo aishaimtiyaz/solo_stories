@@ -20,7 +20,7 @@ export default function ResultCard({ date, onViewChecklist }: ResultCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-gradient-to-br from-purple-50 to-blue-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl shadow-2xl p-8 max-w-2xl mx-auto mb-8"
+      className="bg-linear-to-br from-purple-50 to-blue-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl shadow-2xl p-8 max-w-2xl mx-auto mb-8"
     >
       <div className="text-6xl mb-4 text-center">{date.emoji}</div>
 
@@ -65,7 +65,7 @@ export default function ResultCard({ date, onViewChecklist }: ResultCardProps) {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={onViewChecklist}
-        className="w-full bg-gradient-to-r from-purple-600 to-purple-500 text-white font-bold py-3 rounded-lg transition-all duration-300 hover:shadow-lg"
+        className="w-full bg-linear-to-r from-purple-600 to-purple-500 text-white font-bold py-3 rounded-lg transition-all duration-300 hover:shadow-lg"
       >
         View Checklist →
       </motion.button>
