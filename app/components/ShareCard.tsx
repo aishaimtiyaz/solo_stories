@@ -57,6 +57,7 @@ const shareImage = async () => {
         title: 'My Solo Quest',
         text: 'Check out my Solo Quest!',
         files: [file],
+        url:'https://solo-stories-seven.vercel.app/'
       });
     } else {
       // Fallback for desktop
