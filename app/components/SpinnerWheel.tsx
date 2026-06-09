@@ -9,6 +9,7 @@ interface Date {
   title: string;
   effort: 'low' | 'moderate' | 'high';
   mood: string;
+  chaos: 'normal' | 'funny' | 'crazy';
   duration: string;
   budget: string;
   description: string;
@@ -18,12 +19,14 @@ interface Date {
 interface SpinnerWheelProps {
   dates: Date[];
   selectedEffort: 'low' | 'moderate' | 'high';
+  selectedChaos: 'normal' | 'funny' | 'crazy';
   onDateSelected: (date: Date) => void;
 }
 
 export default function SpinnerWheel({
   dates,
   selectedEffort,
+  selectedChaos,
   onDateSelected,
 }: SpinnerWheelProps) {
   const [isSpinning, setIsSpinning] = useState(false);
@@ -34,8 +37,22 @@ export default function SpinnerWheel({
     setIsClient(true);
   }, []);
 
-  const filteredDates = dates.filter((date) => date.effort === selectedEffort);
+const filteredDates = dates.filter(
+  (date) =>
+    date.effort === selectedEffort &&
+    date.chaos === selectedChaos
+);
 
+  if (filteredDates.length === 0) {
+  return (
+    <div className="text-center py-10">
+      <p className="text-gray-500">
+        No quests available for this combination yet.
+      </p>
+    </div>
+  );
+}
+  
   const handleSpin = () => {
     if (isSpinning || filteredDates.length === 0) return;
 
