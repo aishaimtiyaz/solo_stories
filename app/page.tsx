@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Header from './components/Header';
 import EffortTabs from './components/EffortTabs';
+import ChaosTabs from './components/ChaosTabs';
 import SpinnerWheel from './components/SpinnerWheel';
 import ResultCard from './components/ResultCard';
 import Checklist from './components/Checklist';
@@ -17,6 +18,7 @@ interface Date {
   title: string;
   effort: 'low' | 'moderate' | 'high';
   mood: string;
+  chaos: 'normal' | 'funny' | 'crazy';
   duration: string;
   budget: string;
   description: string;
@@ -29,6 +31,9 @@ export default function Home() {
   const [selectedEffort, setSelectedEffort] = useState<
     'low' | 'moderate' | 'high'
   >('low');
+  const [selectedChaos, setSelectedChaos] = useState<
+  'normal' | 'funny' | 'crazy'
+>('normal');
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [view, setView] = useState<ViewState>('spinner');
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -86,9 +91,15 @@ export default function Home() {
               selectedEffort={selectedEffort}
               onSelectEffort={setSelectedEffort}
             />
+            <ChaosTabs
+              selectedChaos={selectedChaos}
+              onSelectChaos={setSelectedChaos}
+            />
+                        
             <SpinnerWheel
               dates={datesData as Date[]}
               selectedEffort={selectedEffort}
+              selectedChaos={selectedChaos}
               onDateSelected={handleDateSelected}
             />
           </motion.div>
