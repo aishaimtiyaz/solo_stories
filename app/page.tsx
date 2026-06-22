@@ -11,6 +11,8 @@ import Checklist from './components/Checklist';
 import ShareCard from './components/ShareCard';
 import Footer from './components/Footer';
 import datesData from '@/data/dates.json';
+import { addTask as persistAddTask } from '@/utils/localStorage';
+import StorageDebug from './components/StorageDebug';
 
 interface Date {
   id: number;
@@ -49,6 +51,13 @@ export default function Home() {
   }, []);
 
   const handleDateSelected = (date: Date) => {
+    // persist the appeared task so it can be resumed later
+    try {
+      persistAddTask(date);
+    } catch (err) {
+      // non-fatal; continue to show result
+      console.warn('persistAddTask failed', err);
+    }
     setSelectedDate(date);
     setView('result');
   };
@@ -157,6 +166,8 @@ export default function Home() {
           </motion.div>
         )}
       </main>
+
+      {process.env.NODE_ENV === 'development' && <StorageDebug />}
 
       <Footer />
     </div>

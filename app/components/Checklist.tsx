@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import useTasks from '@/hooks/useTasks';
 import confetti from 'canvas-confetti';
 
 interface ChecklistProps {
@@ -18,6 +19,7 @@ export default function Checklist({ date, onBack, onShare }: ChecklistProps) {
   const [checkedItems, setCheckedItems] = useState<boolean[]>(
     new Array(date.steps.length).fill(false)
   );
+  const { getTask, toggleStep } = useTasks();
   const [showCelebration, setShowCelebration] = useState(false);
 
   const allChecked = checkedItems.every((item) => item);
@@ -25,21 +27,30 @@ export default function Checklist({ date, onBack, onShare }: ChecklistProps) {
   useEffect(() => {
     if (allChecked && checkedItems.some((item) => item)) {
       setShowCelebration(true);
-      // Trigger confetti
-      confetti({
-        particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 },
-      });
+      confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
     } else {
       setShowCelebration(false);
     }
   }, [allChecked, checkedItems]);
 
+  // hydrate from storage when component mounts for this date
+  useEffect(() => {
+    const stored = getTask((date as any).id);
+    if (stored && Array.isArray(stored.stepsChecked)) {
+      setCheckedItems(stored.stepsChecked.slice(0, date.steps.length));
+    }
+  }, [date, getTask]);
+
   const toggleItem = (index: number) => {
-    const newCheckedItems = [...checkedItems];
-    newCheckedItems[index] = !newCheckedItems[index];
-    setCheckedItems(newCheckedItems);
+    const updated = toggleStep((date as any).id, index);
+    if (updated) {
+      setCheckedItems(updated.slice(0, date.steps.length));
+    } else {
+      // fallback to local toggle if storage toggle failed
+      const newCheckedItems = [...checkedItems];
+      newCheckedItems[index] = !newCheckedItems[index];
+      setCheckedItems(newCheckedItems);
+    }
   };
 
   const toggleAll = () => {
