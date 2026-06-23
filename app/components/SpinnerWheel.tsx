@@ -263,7 +263,7 @@ const animFrameRef = useRef<number | null>(null);
               const ly2 = cy + (r + 2) * Math.sin(startAngle);
 
               return (
-                <g key={date.id}>
+                <g key={i}>
                   <path
                     d={`M ${cx} ${cy} L ${x1} ${y1} A ${r} ${r} 0 ${largeArc} 1 ${x2} ${y2} Z`}
                     fill={`url(#seg-grad-${i})`}
@@ -379,10 +379,9 @@ const animFrameRef = useRef<number | null>(null);
           disabled={isSpinning}
           style={{
             fontFamily: 'Cinzel, Georgia, serif',
-            background: isSpinning
-              ? 'rgba(30,16,64,0.6)'
-              : 'linear-gradient(135deg, #7C3AED 0%, #4C1D95 50%, #7C3AED 100%)',
-            backgroundSize: '200% 100%',
+            backgroundColor: isSpinning ? 'rgba(30,16,64,0.6)' : undefined,
+            backgroundImage: !isSpinning ? 'linear-gradient(135deg, #7C3AED 0%, #4C1D95 50%, #7C3AED 100%)' : undefined,
+            backgroundSize: !isSpinning ? '200% 100%' : undefined,
             border: isSpinning
               ? '1.5px solid rgba(124,58,237,0.3)'
               : '1.5px solid rgba(196,181,253,0.5)',

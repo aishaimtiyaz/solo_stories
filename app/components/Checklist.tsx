@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import useTasks from '@/hooks/useTasks';
+import { removeTask } from '@/utils/localStorage';
 import confetti from 'canvas-confetti';
 
 interface ChecklistProps {
@@ -25,19 +26,45 @@ export default function Checklist({ date, onBack, onShare }: ChecklistProps) {
   const allChecked = checkedItems.every((item) => item);
 
   useEffect(() => {
+    let redirectTimer: number | undefined;
     if (allChecked && checkedItems.some((item) => item)) {
       setShowCelebration(true);
       confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+      try {
+        // clear saved state for this date so it doesn't reopen next visit
+        const id = (date as any).id;
+        if (typeof id === 'number') removeTask(id);
+        else removeTask((date as any).title || '');
+      } catch (err) {
+        console.warn('Failed to remove saved task', err);
+      }
+      // after a short delay, navigate to Share (download) view
+      redirectTimer = window.setTimeout(() => onShare(), 900);
     } else {
       setShowCelebration(false);
     }
+    return () => { if (redirectTimer) clearTimeout(redirectTimer); };
   }, [allChecked, checkedItems]);
 
   // hydrate from storage when component mounts for this date
   useEffect(() => {
     const stored = getTask((date as any).id);
+  
     if (stored && Array.isArray(stored.stepsChecked)) {
-      setCheckedItems(stored.stepsChecked.slice(0, date.steps.length));
+      let stepsChecked = Array.isArray(stored.stepsChecked) ? stored.stepsChecked : []
+      console.log("steps checked fro ls",stepsChecked)
+      let isAllStepsChecked = stepsChecked.every(Boolean);
+        console.log("isAllStepsChecked",isAllStepsChecked)
+        //not all tasks checked 
+        if(!isAllStepsChecked)
+        {
+          setCheckedItems(stored.stepsChecked.slice(0, date.steps.length));
+        }
+        else
+        {
+           removeTask();
+        }
+
     }
   }, [date, getTask]);
 

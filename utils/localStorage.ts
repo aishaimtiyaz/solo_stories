@@ -1,4 +1,4 @@
-type StoredTask = {
+export type StoredTask = {
   dateId: number;
   title: string;
   emoji?: string;
@@ -9,7 +9,8 @@ type StoredTask = {
 type Contact = { name?: string; phone?: string } | undefined;
 
 type SoloState = {
-  tasks: StoredTask[];
+  // single active task (no array) to keep the app simple
+  task?: StoredTask;
   contact?: Contact;
 };
 
@@ -20,15 +21,15 @@ function isClient() {
 }
 
 export function loadState(): SoloState {
-  if (!isClient()) return { tasks: [] };
+  if (!isClient()) return {} as SoloState;
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    console.debug('[localStorage] loadState raw:', raw);
-    if (!raw) return { tasks: [] };
+    // console.debug('[localStorage] loadState raw:', raw);
+    if (!raw) return {} as SoloState;
     return JSON.parse(raw) as SoloState;
   } catch (err) {
     console.warn('Failed to parse storage', err);
-    return { tasks: [] };
+    return {} as SoloState;
   }
 }
 
@@ -46,8 +47,7 @@ export function saveState(state: SoloState) {
 export function addTask(date: any): StoredTask {
   console.debug('[localStorage] addTask', date && date.id);
   const state = loadState();
-  const existing = state.tasks.find((t) => t.dateId === date.id);
-  if (existing) return existing;
+  if (state.task && state.task.dateId === date.id) return state.task;
 
   const newTask: StoredTask = {
     dateId: date.id,
@@ -56,22 +56,24 @@ export function addTask(date: any): StoredTask {
     stepsChecked: new Array(date.steps?.length || 0).fill(false),
     appearedAt: Date.now(),
   };
-  state.tasks.push(newTask);
+  state.task = newTask;
   saveState(state);
   return newTask;
 }
 
 export function getTask(dateId: number): StoredTask | undefined {
   const state = loadState();
-  return state.tasks.find((t) => t.dateId === dateId);
+  if (!state.task) return undefined;
+  return state.task.dateId === dateId ? state.task : undefined;
 }
 
 export function toggleStep(dateId: number, stepIndex: number): StoredTask | undefined {
   const state = loadState();
-  const t = state.tasks.find((x) => x.dateId === dateId);
-  if (!t) return undefined;
+  const t = state.task;
+  if (!t || t.dateId !== dateId) return undefined;
   if (stepIndex < 0 || stepIndex >= t.stepsChecked.length) return t;
   t.stepsChecked[stepIndex] = !t.stepsChecked[stepIndex];
+  state.task = t;
   saveState(state);
   return t;
 }
@@ -82,4 +84,12 @@ export function saveContact(contact: Contact) {
   saveState(state);
 }
 
-export { StoredTask };
+// remove task by numeric dateId or by title string (for older entries)
+export function removeTask(identifier?: number | string) {
+  const state = loadState();
+  if (!state) return;
+  localStorage.removeItem(STORAGE_KEY)
+  
+}
+
+

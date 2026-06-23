@@ -20,7 +20,7 @@ export default function StorageDebug() {
   }, []);
 
   const clear = () => {
-    saveState({ tasks: [] });
+    saveState({});
     refresh();
   };
 
@@ -34,7 +34,7 @@ export default function StorageDebug() {
     <div style={{ position: 'fixed', right: 12, bottom: 12, zIndex: 9999 }}>
       <div className="bg-white dark:bg-gray-900 p-3 rounded-lg shadow-lg w-80 max-w-full text-xs">
         <div className="flex items-center justify-between mb-2">
-          <strong>Storage Debug</strong>
+          //<strong>Storage Debug</strong>
           <div className="flex gap-1">
             <button onClick={refresh} className="px-2 py-1 bg-gray-100 rounded">Refresh</button>
             <button onClick={addSample} className="px-2 py-1 bg-yellow-100 rounded">Add</button>

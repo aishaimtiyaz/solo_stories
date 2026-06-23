@@ -12,7 +12,8 @@ import ShareCard from './components/ShareCard';
 import Footer from './components/Footer';
 import datesData from '@/data/dates.json';
 import { addTask as persistAddTask } from '@/utils/localStorage';
-import StorageDebug from './components/StorageDebug';
+import { loadState } from '@/utils/localStorage';
+// import StorageDebug from './components/StorageDebug';
 
 interface Date {
   id: number;
@@ -48,11 +49,27 @@ export default function Home() {
     ) {
       setIsDarkMode(true);
     }
+    // hydrate any unfinished task from localStorage and open checklist
+    try {
+      const state = loadState();
+      const saved = state.task;
+      if (saved && !saved.stepsChecked.every(Boolean)) {
+        const allDates = datesData as Date[];
+        const matched = allDates.find((d) => d.id === (saved as any).dateId) || allDates.find((d) => d.title === saved.title);
+        if (matched) {
+          setSelectedDate(matched);
+          setView('checklist');
+        }
+      }
+    } catch (err) {
+      console.warn('hydrate stored progress failed', err);
+    }
   }, []);
 
   const handleDateSelected = (date: Date) => {
     // persist the appeared task so it can be resumed later
     try {
+      console.log('persisting task ', date)
       persistAddTask(date);
     } catch (err) {
       // non-fatal; continue to show result
@@ -167,7 +184,7 @@ export default function Home() {
         )}
       </main>
 
-      {process.env.NODE_ENV === 'development' && <StorageDebug />}
+      {/* {process.env.NODE_ENV === 'development' && <StorageDebug />} */}
 
       <Footer />
     </div>
