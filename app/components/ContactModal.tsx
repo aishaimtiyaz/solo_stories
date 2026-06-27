@@ -5,32 +5,33 @@ import { saveContact, loadState } from '@/utils/localStorage';
 
 interface Props {
   onClose: () => void;
-  onSaved: (data: { name?: string; phone?: string }) => void;
+  onSaved: (data: { name?: string; email?: string }) => void;
 }
 
 export default function ContactModal({ onClose, onSaved }: Props) {
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone , setPhone] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const submit = async () => {
     setError(null);
-    if (!name && !phone) {
-      setError('Please enter at least a sweet name or a phone (optional).');
+    if (!name.trim() || !email.trim()) {
+      setError('Please enter both your name and email.');
       return;
     }
     setLoading(true);
     try {
       // save locally
-      saveContact({ name: name || undefined, phone: phone || undefined });
+      saveContact({ name: name.trim(), email: email.trim() });
 
       // prepare payload with active task if present
       const state = loadState();
       const task = (state as any).task;
       const payload = {
-        name: name || '',
-        phone: phone || '',
+        name: name.trim(),
+        email: email.trim(),
         dateId: task?.dateId,
         title: task?.title,
         stepsChecked: task?.stepsChecked,
@@ -50,7 +51,7 @@ export default function ContactModal({ onClose, onSaved }: Props) {
         console.warn('submit failed', e);
       }
 
-      onSaved({ name: name || undefined, phone: phone || undefined });
+      onSaved({ name: name.trim(), email: email.trim() });
       onClose();
     } catch (err: any) {
       console.error(err);
@@ -71,22 +72,26 @@ export default function ContactModal({ onClose, onSaved }: Props) {
             </svg>
           </div>
           <div>
-            <h3 className="font-bold text-lg">Save your adventure</h3>
-            <p className="text-xs text-gray-500">Optional — helps you keep history</p>
+            <h3 className="font-bold text-lg">Share your adventure</h3>
+            <p className="text-xs text-gray-500">Tell us who you are before sharing</p>
           </div>
         </div>
 
-        <label className="block text-xs text-gray-500 mb-1">Sweet name</label>
-        <input value={name} onChange={(e) => setName(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="e.g. Sam / @saminsta" />
+        <label className="block text-xs text-gray-500 mb-1">Name</label>
+        <input value={name} onChange={(e) => setName(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="Your name" />
 
-        <label className="block text-xs text-gray-500 mb-1">Phone (optional)</label>
-        <input value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="e.g. +91 98xxxx" />
+        <label className="block text-xs text-gray-500 mb-1">Email</label>
+        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="you@example.com" />
+
+        
+        <label className="block text-xs text-gray-500 mb-1">Phone</label>
+        <input type="phone" value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="you@example.com" />
 
         {error && <p className="text-sm text-red-500 mb-2">{error}</p>}
 
         <div className="flex gap-2 mt-2">
           <button onClick={onClose} className="flex-1 px-3 py-2 rounded bg-gray-100 dark:bg-gray-800">Skip</button>
-          <button onClick={submit} disabled={loading} className="flex-1 px-3 py-2 rounded bg-purple-600 text-white font-semibold">{loading ? 'Saving...' : 'Save & Continue'}</button>
+          <button onClick={submit} disabled={loading} className="flex-1 px-3 py-2 rounded bg-purple-600 text-white font-semibold">{loading ? 'Saving...' : 'Continue'}</button>
         </div>
       </div>
     </div>

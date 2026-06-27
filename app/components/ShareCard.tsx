@@ -21,6 +21,11 @@ export default function ShareCard({ date, onBack }: ShareCardProps) {
   const [showContact, setShowContact] = useState(false);
   const [pendingAction, setPendingAction] = useState<'download' | 'share' | null>(null);
 
+  const handleShareClick = () => {
+    setPendingAction('share');
+    setShowContact(true);
+  };
+
   const downloadImage = async () => {
     // ensure contact saved before download
     const state = loadState();
@@ -38,13 +43,6 @@ export default function ShareCard({ date, onBack }: ShareCardProps) {
   };
 
   const shareImage = async () => {
-    // ensure contact saved before share
-    const state = loadState();
-    if (!state.contact) {
-      setPendingAction('share');
-      setShowContact(true);
-      return;
-    }
     if (!cardRef.current) return;
     try {
       const blob = await toBlob(cardRef.current, { pixelRatio: 2, cacheBust: true });
@@ -249,7 +247,7 @@ const dailyMessage = ORACLE_MESSAGES[new Date().getDate() % ORACLE_MESSAGES.leng
 
         <motion.button
           whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
-          onClick={shareImage}
+          onClick={handleShareClick}
           style={{
             flex: 1.4, padding: '0.75rem 1rem',
             background: 'linear-gradient(135deg, #7C3AED 0%, #4C1D95 100%)',

@@ -1,10 +1,33 @@
 import { NextResponse } from 'next/server';
+import { sheets } from "@/lib/googleSheets";
 
 export async function POST(req: Request) {
   try {
     const body = await req.json();
+    const sheetId = process.env.GOOGLE_SHEET_ID;
+    const hasSheetsConfig = Boolean(
+      sheetId &&
+      process.env.GOOGLE_CLIENT_EMAIL &&
+      process.env.GOOGLE_PRIVATE_KEY
+    );
 
-    // Forward to Google Apps Script URL if configured
+    if (hasSheetsConfig) {
+      await sheets.spreadsheets.values.append({
+        spreadsheetId: sheetId,
+        range: "Sheet1!A:D",
+        valueInputOption: "USER_ENTERED",
+        requestBody: {
+          values: [[
+            body.name || '',
+            body.email || '',
+            body.dateId || '',
+            new Date().toISOString(),
+          ]],
+        },
+      });
+      return NextResponse.json({ ok: true, note: 'sheet-appended' });
+    }
+
     const gsa = process.env.GSA_SCRIPT_URL;
     if (gsa) {
       await fetch(gsa, {
@@ -12,15 +35,13 @@ export async function POST(req: Request) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
       });
-      return NextResponse.json({ ok: true });
+      return NextResponse.json({ ok: true, note: 'forwarded-gsa' });
     }
 
-    // If not configured, log and return success so client doesn't error
-    // (You can set GSA_SCRIPT_URL to an Apps Script Web App that appends to a sheet.)
     console.log('submit payload:', body);
     return NextResponse.json({ ok: true, note: 'no-forward' });
   } catch (err) {
-    console.error(err);
-    return NextResponse.json({ ok: false }, { status: 500 });
+    console.error('submit error:', err);
+    return NextResponse.json({ ok: false, error: 'server_error' }, { status: 500 });
   }
 }
