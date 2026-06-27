@@ -19,8 +19,8 @@ export async function POST(req: Request) {
         requestBody: {
           values: [[
             body.name || '',
+            body.phone || '',
             body.email || '',
-            body.dateId || '',
             new Date().toISOString(),
           ]],
         },

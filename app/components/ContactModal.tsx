@@ -1,5 +1,4 @@
 'use client';
-
 import { useState } from 'react';
 import { saveContact, loadState } from '@/utils/localStorage';
 
@@ -81,11 +80,11 @@ export default function ContactModal({ onClose, onSaved }: Props) {
         <input value={name} onChange={(e) => setName(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="Your name" />
 
         <label className="block text-xs text-gray-500 mb-1">Email</label>
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="you@example.com" />
+        <input type="string" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="you@example.com" />
 
         
         <label className="block text-xs text-gray-500 mb-1">Phone</label>
-        <input type="phone" value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="you@example.com" />
+        <input type="string" value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="you@example.com" />
 
         {error && <p className="text-sm text-red-500 mb-2">{error}</p>}
 
