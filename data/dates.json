@@ -1080,7 +1080,7 @@
       "Film dramatic clips",
       "Add narration",
       "Edit together",
-      "Publish privately"
+      "Publish privately/publically"
     ]
   },
   {
@@ -1098,5 +1098,729 @@
       "Take cinematic photos",
       "Write the ending"
     ]
+  },
+  {
+    "title": "Speak Only in Movie Quotes for an Hour",
+    "effort": "low",
+    "mood": "creative",
+    "chaos": "crazy",
+    "duration": "30-60 min",
+    "budget": "₹0",
+    "description": "Communicate exclusively through movie lines for a full hour, no matter who you're talking to.",
+    "steps": [
+      "Set a 1-hour timer",
+      "Only respond using movie quotes",
+      "Text or talk normally as usual otherwise",
+      "Note down funniest reactions you get",
+      "Reveal the challenge at the end"
+    ]
+  },
+  {
+    "title": "Order the Weirdest Item on the Menu",
+    "effort": "low",
+    "mood": "adventurous",
+    "chaos": "crazy",
+    "duration": "30-60 min",
+    "budget": "₹100-300",
+    "description": "Walk into any food place and order whatever sounds the strangest without asking questions.",
+    "steps": [
+      "Pick a nearby café or restaurant",
+      "Scan the menu for the oddest sounding item",
+      "Order it with zero hesitation",
+      "Eat it fully, no matter what",
+      "Rate the experience out loud"
+    ]
+  },
+  {
+    "title": "Give Yourself a Wrestling Entrance",
+    "effort": "low",
+    "mood": "creative",
+    "chaos": "crazy",
+    "duration": "30 min",
+    "budget": "₹0",
+    "description": "Pick a theme song and walk into a room like a WWE superstar making an entrance.",
+    "steps": [
+      "Choose your entrance music",
+      "Design a dramatic walk or pose",
+      "Record yourself entering the room",
+      "Do a victory speech",
+      "Save the clip as your new hype video"
+    ]
+  },
+  {
+    "title": "Talk to a Voice Assistant Like It's Your Therapist",
+    "effort": "low",
+    "mood": "self-love",
+    "chaos": "crazy",
+    "duration": "30-45 min",
+    "budget": "₹0",
+    "description": "Have a full, dramatic therapy-style session with Siri, Alexa, or Google Assistant.",
+    "steps": [
+      "Set the scene, dim lights, sit comfortably",
+      "Start venting your day to the assistant",
+      "Ask it deep questions about your life",
+      "React seriously to whatever it says back",
+      "Write one honest takeaway afterward"
+    ]
+  },
+  {
+    "title": "Write and Follow a Fake Horoscope for the Day",
+    "effort": "low",
+    "mood": "creative",
+    "chaos": "crazy",
+    "duration": "30-60 min",
+    "budget": "₹0",
+    "description": "Invent your own dramatic horoscope in the morning and obey it strictly all day.",
+    "steps": [
+      "Write an over-the-top horoscope for yourself",
+      "Include one weird instruction to follow",
+      "Carry it with you all day",
+      "Actually follow every line",
+      "Journal how uncannily accurate it felt"
+    ]
+  },
+  {
+    "title": "Rank Every Dog You See on a Podium",
+    "effort": "low",
+    "mood": "creative",
+    "chaos": "crazy",
+    "duration": "45-60 min",
+    "budget": "₹0",
+    "description": "Go for a walk and seriously rank every dog you spot like an Olympic judge.",
+    "steps": [
+      "Head to a park or busy street",
+      "Score each dog you see out of 10",
+      "Note criteria: fluff, energy, vibe",
+      "Crown a gold medal dog",
+      "Write a mock award speech for it"
+    ]
+  },
+  {
+    "title": "Cook a Meal Using Only One-Letter Ingredients",
+    "effort": "low",
+    "mood": "creative",
+    "chaos": "crazy",
+    "duration": "45-60 min",
+    "budget": "₹100-300",
+    "description": "Pick a random letter and cook using only ingredients starting with it.",
+    "steps": [
+      "Randomly pick a letter of the alphabet",
+      "List ingredients you own starting with it",
+      "Cook whatever dish is possible",
+      "Name the dish dramatically",
+      "Rate the final result honestly"
+    ]
+  },
+  {
+    "title": "Give a Stranger's Pet a Full Conversation",
+    "effort": "low",
+    "mood": "adventurous",
+    "chaos": "crazy",
+    "duration": "30 min",
+    "budget": "₹0",
+    "description": "Politely ask a pet owner if you can chat with their dog or cat like an old friend.",
+    "steps": [
+      "Spot a friendly-looking pet outside",
+      "Ask the owner's permission first",
+      "Have a one-sided full conversation with the pet",
+      "Ask it deep or silly questions",
+      "Thank the pet formally before leaving"
+    ]
+  },
+  {
+    "title": "Do Your Grocery Run in a Costume",
+    "effort": "low",
+    "mood": "adventurous",
+    "chaos": "crazy",
+    "duration": "30-60 min",
+    "budget": "₹0-200",
+    "description": "Wear the most dramatic outfit you own for a completely ordinary errand.",
+    "steps": [
+      "Pick your most extra outfit or costume piece",
+      "Wear it for a regular grocery run",
+      "Act completely normal throughout",
+      "Note people's reactions",
+      "Take one photo as proof"
+    ]
+  },
+  {
+    "title": "Send a Random Compliment to an Old Contact",
+    "effort": "low",
+    "mood": "self-love",
+    "chaos": "crazy",
+    "duration": "15-30 min",
+    "budget": "₹0",
+    "description": "Scroll your contacts, pick someone you haven't spoken to in ages, and send a genuine compliment out of nowhere.",
+    "steps": [
+      "Scroll to a long-forgotten contact",
+      "Think of one real, specific compliment",
+      "Send it with no explanation needed",
+      "Let the conversation go wherever it goes",
+      "Reflect on how it felt to reconnect"
+    ]
+  },
+  {
+    "title": "Solo Karaoke in a Public Park",
+    "effort": "moderate",
+    "mood": "adventurous",
+    "chaos": "crazy",
+    "duration": "1-2 hrs",
+    "budget": "₹0",
+    "description": "Bring a speaker or just your voice, find a quiet corner of a park, and perform full songs like it's your concert.",
+    "steps": [
+      "Pick a park or open space",
+      "Choose 3-5 songs to perform",
+      "Sing them like it's a live show",
+      "Take a bow after each one",
+      "Film one song for the memories"
+    ]
+  },
+  {
+    "title": "Recreate a Viral Meme in Real Life",
+    "effort": "moderate",
+    "mood": "creative",
+    "chaos": "crazy",
+    "duration": "1-2 hrs",
+    "budget": "₹0-200",
+    "description": "Pick a famous meme and physically recreate it at a public spot with a photo to match.",
+    "steps": [
+      "Choose an iconic meme format",
+      "Find a location that fits",
+      "Get props if needed",
+      "Recreate the exact pose and angle",
+      "Post or save the side-by-side"
+    ]
+  },
+  {
+    "title": "Speed-Date Yourself Across 5 Cafés",
+    "effort": "moderate",
+    "mood": "self-love",
+    "chaos": "crazy",
+    "duration": "2-3 hrs",
+    "budget": "₹300-800",
+    "description": "Visit 5 different cafés in one outing and have a mini 'date' with yourself at each, asking yourself questions.",
+    "steps": [
+      "Pick 5 nearby cafés or stalls",
+      "Order one small thing at each",
+      "Ask yourself one deep question per stop",
+      "Write the answer in a notebook",
+      "Compare all 5 answers at the end"
+    ]
+  },
+  {
+    "title": "Host a One-Person Talk Show About Your Day",
+    "effort": "moderate",
+    "mood": "creative",
+    "chaos": "crazy",
+    "duration": "1-2 hrs",
+    "budget": "₹0",
+    "description": "Set up a camera and host your own late-night style talk show, interviewing yourself about your life.",
+    "steps": [
+      "Set up phone as a camera",
+      "Write a short opening monologue",
+      "Interview yourself with real questions",
+      "Add a fake ad break for fun",
+      "Watch the full recording back"
+    ]
+  },
+  {
+    "title": "Give 10 Strangers Unsolicited Compliments",
+    "effort": "moderate",
+    "mood": "self-love",
+    "chaos": "crazy",
+    "duration": "1-2 hrs",
+    "budget": "₹0",
+    "description": "Walk around and genuinely compliment 10 strangers on something specific, no ulterior motive.",
+    "steps": [
+      "Head somewhere with foot traffic",
+      "Spot something genuinely nice about someone",
+      "Say it briefly and walk on",
+      "Repeat until you hit 10",
+      "Journal how it changed your mood"
+    ]
+  },
+  {
+    "title": "Dress as Your Future Successful Self",
+    "effort": "moderate",
+    "mood": "self-love",
+    "chaos": "crazy",
+    "duration": "2-3 hrs",
+    "budget": "₹200-800",
+    "description": "Dress and act exactly like the most successful version of yourself for an entire outing.",
+    "steps": [
+      "Plan the outfit of your 'future self'",
+      "Walk, talk, and order like they would",
+      "Go somewhere upscale even briefly",
+      "Take a photo in character",
+      "Write a note from future-you to present-you"
+    ]
+  },
+  {
+    "title": "Silent Disco Solo Walk",
+    "effort": "moderate",
+    "mood": "adventurous",
+    "chaos": "crazy",
+    "duration": "1-2 hrs",
+    "budget": "₹0",
+    "description": "Put your headphones on, play a hype playlist, and dance-walk through your neighborhood like nobody's watching.",
+    "steps": [
+      "Make a high-energy playlist",
+      "Pick a walking route",
+      "Let yourself dance-walk unapologetically",
+      "Wave or smile at anyone who notices",
+      "End with your favorite song as the finale"
+    ]
+  },
+  {
+    "title": "Propose a Toast to Yourself at a Restaurant",
+    "effort": "moderate",
+    "mood": "self-love",
+    "chaos": "crazy",
+    "duration": "1-2 hrs",
+    "budget": "₹300-1000",
+    "description": "Order a nice meal alone and formally toast to your own achievements out loud, even briefly.",
+    "steps": [
+      "Book or walk into a nice restaurant",
+      "Order something you wouldn't normally get",
+      "Raise your glass and toast yourself softly",
+      "List 3 things you're proud of",
+      "Enjoy the meal fully present"
+    ]
+  },
+  {
+    "title": "Interview Yourself Like a Celebrity Magazine",
+    "effort": "moderate",
+    "mood": "creative",
+    "chaos": "crazy",
+    "duration": "1-2 hrs",
+    "budget": "₹0",
+    "description": "Write and answer a full glossy-magazine-style interview about your 'career' and 'life'.",
+    "steps": [
+      "Write 10 celebrity-style interview questions",
+      "Answer them as your most confident self",
+      "Add a fake magazine title and cover line",
+      "Read it back dramatically out loud",
+      "Save it somewhere you'll rediscover later"
+    ]
+  },
+  {
+    "title": "Deliver a TED Talk About a Useless Skill",
+    "effort": "moderate",
+    "mood": "creative",
+    "chaos": "crazy",
+    "duration": "1-2 hrs",
+    "budget": "₹0",
+    "description": "Prepare and film a full mock TED Talk on the most pointless skill you have.",
+    "steps": [
+      "Pick your most random skill or talent",
+      "Write a 3-5 minute talk on it",
+      "Set up a 'stage' at home",
+      "Perform and film it fully",
+      "Give yourself a standing ovation"
+    ]
+  },
+  
+  {
+    "title": "Turn Your Phone Off and Talk to a Plant",
+    "effort": "low",
+    "mood": "creative",
+    "chaos": "crazy",
+    "duration": "20-30 min",
+    "budget": "₹0",
+    "description": "Phone airplane mode pe daalo aur ghar ke kisi plant se poori seriousness se baat karo, jaise wo tumhara therapist ho.",
+    "steps": [
+      "Phone ko dusre room mein rakh do",
+      "Ek plant chuno jisse baat karni hai",
+      "Usse apna din sunao pura",
+      "Uske 'jawab' imagine karo",
+      "Ek chhota sa promise plant se karo"
+    ]
+  },
+  {
+    "title": "Recreate a Random Screenshot from Your Camera Roll",
+    "effort": "low",
+    "mood": "creative",
+    "chaos": "crazy",
+    "duration": "30-45 min",
+    "budget": "₹0-100",
+    "description": "Random purana screenshot ya photo nikalo aur usse exactly recreate karo real life mein.",
+    "steps": [
+      "Camera roll se random photo chuno",
+      "Uski pose ya setting note karo",
+      "Wahi cheez ghar/bahar recreate karo",
+      "Side by side comparison photo lo",
+      "Compare karke haso khud pe"
+    ]
+  },
+  {
+    "title": "Text a Meme to Someone You've Never Sent One To",
+    "effort": "low",
+    "mood": "creative",
+    "chaos": "funny",
+    "duration": "15-20 min",
+    "budget": "₹0",
+    "description": "Contact list mein se koi bilkul random insaan chuno jisse kabhi meme share nahi kiya, aur ek perfectly matched meme bhejo.",
+    "steps": [
+      "Contact list scroll karo bina soche",
+      "Ek naam pe ruk jao",
+      "Unke liye perfect meme dhoondo",
+      "Bina context ke bhej do",
+      "Unka reply predict karke likho pehle"
+    ]
+  },
+  {
+    "title": "Give Your Room a 10-Minute Chaos Makeover",
+    "effort": "low",
+    "mood": "productive",
+    "chaos": "crazy",
+    "duration": "30 min",
+    "budget": "₹0",
+    "description": "Timer laga ke 10 minute mein apna room ekdum different arrangement mein badal do, jaise koi aur ghar ho.",
+    "steps": [
+      "10 minute ka timer set karo",
+      "Furniture ya decor ka position ulta karo",
+      "Kuch naya jagah pe rakho jo pehle kabhi nahi tha",
+      "Photo before/after lo",
+      "Do din tak isi setup mein raho"
+    ]
+  },
+  {
+    "title": "Cook Something You've Only Seen in Reels, Never Tried",
+    "effort": "moderate",
+    "mood": "adventurous",
+    "chaos": "crazy",
+    "duration": "1-2 hrs",
+    "budget": "₹200-500",
+    "description": "Wo trendy recipe jo tumne 50 baar scroll karte dekhi hai lekin kabhi try nahi ki — aaj banao, bina recipe dekhe, sirf memory se.",
+    "steps": [
+      "Yaad karo koi bhi trending reel recipe",
+      "Ingredients arrange karo",
+      "Bina video dobara dekhe banao",
+      "Result ko naam do",
+      "Khud ko rate karo 10 mein se"
+    ]
+  },
+  {
+    "title": "Have a Full Debate With Yourself in the Mirror",
+    "effort": "low",
+    "mood": "creative",
+    "chaos": "crazy",
+    "duration": "20-30 min",
+    "budget": "₹0",
+    "description": "Ek controversial topic chuno aur khud ke dono sides bano — mirror ke saamne poori dabang debate karo.",
+    "steps": [
+      "Ek halka controversial topic chuno",
+      "Side A ka argument bolo mirror mein",
+      "Turn karke Side B ban jao",
+      "Dono sides properly fight karao",
+      "Ek winner declare khud karo"
+    ]
+  },
+  {
+    "title": "Design a Fake Product and Pitch It Out Loud",
+    "effort": "moderate",
+    "mood": "creative",
+    "chaos": "crazy",
+    "duration": "1-2 hrs",
+    "budget": "₹0",
+    "description": "Sabse bekar/absurd product idea socho aur usko Shark Tank style pitch karo camera ke saamne.",
+    "steps": [
+      "Sabse useless product idea socho",
+      "Naam aur tagline banao",
+      "Poora pitch likho 2 minute ka",
+      "Camera on karke pitch karo",
+      "Khud ko funding do ya reject karo"
+    ]
+  },
+  {
+    "title": "Write a Letter to Yourself From 10 Years Ago",
+    "effort": "moderate",
+    "mood": "self-love",
+    "chaos": "crazy",
+    "duration": "1 hr",
+    "budget": "₹0",
+    "description": "10 saal pehle wali version ki tarah letter likho apne aaj wale self ko — unki language, unke sapno se.",
+    "steps": [
+      "10 saal pehle wapas socho khud ko",
+      "Unki awaaz mein letter likhna shuru karo",
+      "Unke sawaal poocho aaj ke self se",
+      "Letter complete karo",
+      "Zor se padho apne aap ko"
+    ]
+  },
+  {
+    "title": "Do a Silent Reaction Video to Your Own Old Posts",
+    "effort": "low",
+    "mood": "creative",
+    "chaos": "funny",
+    "duration": "30-45 min",
+    "budget": "₹0",
+    "description": "Apni hi 2-3 saal purani posts/photos dekho camera on karke, bina bolein, sirf expressions record karo.",
+    "steps": [
+      "Camera on karo record mode mein",
+      "Purani posts scroll karo silently",
+      "Reactions natural aane do",
+      "Video ko bina caption save karo",
+      "Ek baad mein dobara dekho aur haso"
+    ]
+  },
+  {
+    "title": "Build a Blanket Fort and Have a Business Meeting Inside",
+    "effort": "moderate",
+    "mood": "creative",
+    "chaos": "crazy",
+    "duration": "1-2 hrs",
+    "budget": "₹0",
+    "description": "Purana style blanket fort banao aur uske andar khud se poori seriousness se apni 'company' ka board meeting karo.",
+    "steps": [
+      "Fort banao chadar/takiyon se",
+      "Andar baitho laptop/notebook leke",
+      "Apni kisi bhi 'company' ka agenda banao",
+      "Poori meeting seriously conduct karo",
+      "Minutes of meeting likho end mein"
+    ]
+  },
+  {
+    "title": "Give a Fake Weather Report for Your Mood",
+    "effort": "low",
+    "mood": "creative",
+    "chaos": "funny",
+    "duration": "20 min",
+    "budget": "₹0",
+    "description": "News anchor ban ke apne emotional weather ka forecast do — 'chances of chai with 80% procrastination'.",
+    "steps": [
+      "Ek news anchor persona socho",
+      "Apne mood ko weather terms mein describe karo",
+      "Forecast likho agle 3 din ka",
+      "Camera pe record karo seriously",
+      "Save karke kabhi dekho jab low ho"
+    ]
+  },
+  {
+    "title": "Follow a Stranger's Public Playlist Blindly for an Hour",
+    "effort": "low",
+    "mood": "adventurous",
+    "chaos": "crazy",
+    "duration": "1 hr",
+    "budget": "₹0",
+    "description": "Spotify/YouTube pe koi random stranger ki public playlist dhoondo aur bina skip kiye ek ghanta sunо.",
+    "steps": [
+      "Kisi bhi random public playlist khojo",
+      "Skip button touch mat karo",
+      "Har gaane pe apni ek line note karo",
+      "Ek naya favorite dhoondo",
+      "Us gaane ka origin research karo"
+    ]
+  },
+  {
+    "title": "Reorganize Your Life Into a Fake Video Game Menu",
+    "effort": "moderate",
+    "mood": "productive",
+    "chaos": "crazy",
+    "duration": "1-2 hrs",
+    "budget": "₹0",
+    "description": "Apni goals, tasks aur habits ko ek video game ke 'stats' aur 'quests' menu ki tarah likh ke design karo.",
+    "steps": [
+      "Kaagaz ya app pe game menu draw karo",
+      "Apni life areas ko 'stats' banao (health, wealth, etc)",
+      "Har goal ko 'quest' naam do",
+      "XP points assign karo achievements ko",
+      "Level dikhao khud ka honestly"
+    ]
+  },
+  {
+    "title": "Ambush Yourself With a Surprise Solo Photoshoot",
+    "effort": "moderate",
+    "mood": "self-love",
+    "chaos": "crazy",
+    "duration": "1-2 hrs",
+    "budget": "₹0-300",
+    "description": "Bina soche-samjhe abhi uthke best outfit pehno aur ghar ya bahar solo photoshoot kar do jaise koi magazine cover ho.",
+    "steps": [
+      "5 minute mein best outfit chuno",
+      "Achi light waali jagah dhoondo",
+      "Timer laga ke solo shoot karo",
+      "Kam se kam 20 poses try karo",
+      "Best photo ko naya profile pic banao"
+    ]
+  },
+  {
+    "title": "Record a Fake Radio Show About Your Day",
+    "effort": "low",
+    "mood": "creative",
+    "chaos": "funny",
+    "duration": "30-45 min",
+    "budget": "₹0",
+    "description": "Voice memo on karo aur ek pura radio jockey style show record karo apne din ke random moments pe.",
+    "steps": [
+      "Voice recorder on karo",
+      "RJ intro se start karo",
+      "Apne din ki 'top stories' sunao",
+      "Beech mein fake ad break dalo",
+      "Poora episode dobara sun ke enjoy karo"
+    ]
+  },
+  {
+    "title": "Surprise Village Drive & Live Moment Log",
+    "effort": "high",
+    "mood": "adventurous",
+    "chaos": "crazy",
+    "duration": "3-8 hrs",
+    "budget": "₹500-2000",
+    "description": "Apne shehar ke paas kisi anjaan village ki taraf bina planning ke drive karo, aur raaste mein jo bhi moment aaye usse live capture karke turant refresh/share karo.",
+    "steps": [
+      "Google Maps pe random ek village pin karo 1-2 hr door",
+      "Bina route fix kiye drive shuru karo",
+      "Har interesting stop pe ek photo/video turant lo",
+      "Kisi local se village ke baare mein ek sawaal pucho",
+      "Wapas aake pura din ek reel/story mein pirona"
+    ]
+  },
+  {
+    "title": "First-Time Visitor Roleplay in Your Own City",
+    "effort": "moderate",
+    "mood": "adventurous",
+    "chaos": "crazy",
+    "duration": "1-3 hrs",
+    "budget": "₹200-500",
+    "description": "Apne hi shehar mein aise ghoomo jaise pehli baar aayi ho — map khol ke, confuse hoke, aur logo se directions pucho jo tumhe already pata hain.",
+    "steps": [
+      "Google Maps khula rakho jaan-boojh ke",
+      "Kisi landmark ke directions ek stranger se pucho",
+      "Ek local dukaan pe 'yeh area kaisa hai' pucho",
+      "Tourist jaisi photos lo har jagah",
+      "Reaction record karo jab log confuse ho jaayein"
+    ]
+  },
+  {
+    "title": "Ask Strangers One Weird Question Each",
+    "effort": "moderate",
+    "mood": "creative",
+    "chaos": "funny",
+    "duration": "1-2 hrs",
+    "budget": "₹0-200",
+    "description": "5 alag strangers se — chahe local ho ya tourist — same ek ajeeb sa sawaal pucho aur unke reactions record karo.",
+    "steps": [
+      "Ek weird sawaal socho pehle se (e.g. 'agar aap ek animal hote to kaunsa?')",
+      "5 strangers ko approach karo respectfully",
+      "Same sawaal sabse pucho",
+      "Reactions ko note ya record karo (permission ke saath)",
+      "Best answer ko reel mein highlight karo"
+    ]
+  },
+  {
+    "title": "Follow a Random Local's Recommendation Blindly",
+    "effort": "moderate",
+    "mood": "adventurous",
+    "chaos": "crazy",
+    "duration": "1-3 hrs",
+    "budget": "₹200-600",
+    "description": "Kisi bhi local se pucho 'is area ki sabse best cheez kya hai' aur unki recommendation ko bina soche follow karo.",
+    "steps": [
+      "Kisi shopkeeper ya passerby se pucho best local spot/food",
+      "Unki recommendation ko exactly follow karo",
+      "Wahan jaake experience karo",
+      "Unhi ko bata do baad mein result kaisa raha",
+      "Poora journey document karo"
+    ]
+  },
+  {
+    "title": "Interview a Tourist About Your Own City",
+    "effort": "moderate",
+    "mood": "creative",
+    "chaos": "funny",
+    "duration": "1-2 hrs",
+    "budget": "₹0",
+    "description": "Kisi actual tourist ko dhoondo aur unse pucho ki unhe tumhare shehar ke baare mein kya lagta hai — unke perspective se apna shehar dekho.",
+    "steps": [
+      "Kisi tourist spot pe jaao jahan tourists milte hain",
+      "Politely permission leke short interview lo",
+      "Pucho unko shehar ka kya pasand aaya sabse zyada",
+      "Ek cheez pucho jo unhe ajeeb lagi",
+      "Apna reaction unke jawabo pe record karo"
+    ]
+  },
+  
+  {
+    "title": "Talk to the Familiar Stranger Today",
+    "effort": "low",
+    "mood": "adventurous",
+    "chaos": "crazy",
+    "duration": "5-15 min",
+    "budget": "₹0",
+    "description": "Wo insaan jo tumhe roz school, college, office ya duty jaate waqt transport mein dikhta hai lekin kabhi baat nahi hui — aaj unse baat karo.",
+    "steps": [
+      "Us roz wale familiar chehre ko yaad karo",
+      "Ek simple line se shuruaat karo (e.g. 'aap bhi roz isi time milte ho na?')",
+      "2-3 min ki normal baatcheet karo",
+      "Unka naam ya kaam pucho agar comfortable lage",
+      "Baad mein likho kaisa laga unse baat karke"
+    ]
+  },
+  {
+    "title": "One Stranger, One Conversation — Bus/Auto Edition",
+    "effort": "low",
+    "mood": "adventurous",
+    "chaos": "crazy",
+    "duration": "10-20 min",
+    "budget": "₹0",
+    "description": "Apne roz ke commute (bus, auto, metro, train) mein ek bilkul anjaan stranger se baat shuru karo, bina kisi wajah ke.",
+    "steps": [
+      "Apne paas baithe ya khade kisi stranger ko choose karo",
+      "Halki si comment ya sawaal se baat shuru karo",
+      "Unki roz ki routine ya destination pucho",
+      "Conversation ko naturally flow karne do",
+      "Journey khatam hone tak jo bhi baat hui usse yaad rakho"
+    ]
+  },
+  {
+    "title": "Compliment Your Daily Commute Regular",
+    "effort": "low",
+    "mood": "self-love",
+    "chaos": "funny",
+    "duration": "5-10 min",
+    "budget": "₹0",
+    "description": "Koi bhi insaan jo roz same route pe milta hai — driver, conductor, ya fellow commuter — unhe genuinely ek compliment do aaj.",
+    "steps": [
+      "Apne roz ke commute pe dhyaan do kaun regular milta hai",
+      "Ek sachi, specific compliment socho unke liye",
+      "Bina awkward hue seedha bol do",
+      "Unka reaction dekho",
+      "Agle din bhi unhe hello bolo"
+    ]
+  },
+  {
+    "title": "Ask the Auto/Cab Driver Their Story",
+    "effort": "low",
+    "mood": "creative",
+    "chaos": "normal",
+    "duration": "10-20 min",
+    "budget": "₹0",
+    "description": "Agli baar auto, cab ya rickshaw lo to driver se unki journey ya city ke baare mein ek interesting sawaal pucho.",
+    "steps": [
+      "Ride shuru hote hi ek friendly sawaal pucho",
+      "Unka background ya city ka koi kissa pucho",
+      "Poori tarah suno bina interrupt kiye",
+      "Ek cheez seekho jo tumhe pehle nahi pata thi",
+      "Ride khatam hone pe unhe dhanyawad bolo dil se"
+    ]
+  },
+  {
+    "title": "Swap Seats and Swap Stories",
+    "effort": "low",
+    "mood": "adventurous",
+    "chaos": "crazy",
+    "duration": "15-25 min",
+    "budget": "₹0",
+    "description": "Public transport mein aaj apni normal seat/spot chhodo aur kisi naye insaan ke paas baitho jaan-boojh kar baat karne ke liye.",
+    "steps": [
+      "Apni usual seat ya jagah aaj mat lo",
+      "Kisi naye stranger ke paas baitho",
+      "Ek casual baat se conversation shuru karo",
+      "Unse pucho wo kahan jaa rahe hain aaj",
+      "Journey ke end tak kam se kam ek cheez share karo dono taraf se"
+    ]
   }
+
+
 ]

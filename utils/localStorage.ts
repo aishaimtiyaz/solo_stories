@@ -6,7 +6,7 @@ export type StoredTask = {
   appearedAt: number;
 };
 
-type Contact = { name?: string; email?: string } | undefined;
+type Contact = { name?: string; phone?: string } | undefined;
 
 type SoloState = {
   // single active task (no array) to keep the app simple
@@ -91,5 +91,3 @@ export function removeTask(identifier?: number | string) {
   localStorage.removeItem(STORAGE_KEY)
   
 }
-
-
