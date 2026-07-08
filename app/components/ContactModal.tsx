@@ -4,33 +4,32 @@ import { saveContact, loadState } from '@/utils/localStorage';
 
 interface Props {
   onClose: () => void;
-  onSaved: (data: { name?: string; email?: string }) => void;
+  onSaved: (data: { name?: string; phone?: string }) => void;
 }
 
 export default function ContactModal({ onClose, onSaved }: Props) {
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
   const [phone , setPhone] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const submit = async () => {
     setError(null);
-    if (!name.trim() || !email.trim()) {
-      setError('Please enter both your name and email.');
+    if (!name.trim() || !phone.trim()) {
+      setError('Please enter both your name and phone.');
       return;
     }
     setLoading(true);
     try {
       // save locally
-      saveContact({ name: name.trim(), email: email.trim() });
+      saveContact({ name: name.trim(), phone: phone.trim() });
 
       // prepare payload with active task if present
       const state = loadState();
       const task = (state as any).task;
       const payload = {
         name: name.trim(),
-        email: email.trim(),
+        phone: phone.trim(),
         dateId: task?.dateId,
         title: task?.title,
         stepsChecked: task?.stepsChecked,
@@ -40,17 +39,23 @@ export default function ContactModal({ onClose, onSaved }: Props) {
 
       // send to server API (which can forward to Google Apps Script)
       try {
-        await fetch('/api/submit', {
+        const response = await fetch('/api/submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload),
         });
+        const result = await response.json();
+
+        if (!response.ok) {
+          throw new Error(result.message || "Failed to save");
+        }
+
       } catch (e) {
         // ignore network errors; server may be unconfigured
         console.warn('submit failed', e);
       }
 
-      onSaved({ name: name.trim(), email: email.trim() });
+      onSaved({ name: name.trim(), phone: phone.trim() });
       onClose();
     } catch (err: any) {
       console.error(err);
@@ -79,12 +84,12 @@ export default function ContactModal({ onClose, onSaved }: Props) {
         <label className="block text-xs text-gray-500 mb-1">Name</label>
         <input value={name} onChange={(e) => setName(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="Your name" />
 
-        <label className="block text-xs text-gray-500 mb-1">Email</label>
-        <input type="string" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="you@example.com" />
+        {/* <label className="block text-xs text-gray-500 mb-1">Email</label>
+        <input type="string" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="you@example.com" /> */}
 
         
         <label className="block text-xs text-gray-500 mb-1">Phone</label>
-        <input type="string" value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="you@example.com" />
+        <input type="string" value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="eg:9162458575" />
 
         {error && <p className="text-sm text-red-500 mb-2">{error}</p>}
 
