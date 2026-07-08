@@ -91,5 +91,3 @@ export function removeTask(identifier?: number | string) {
   localStorage.removeItem(STORAGE_KEY)
   
 }
-
-

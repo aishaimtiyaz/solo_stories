@@ -70,13 +70,21 @@ export default function ShareCard({ date, onBack }: ShareCardProps) {
 
   {/* Daily oracle message */}
 const ORACLE_MESSAGES = [
-  "The stars chose this for you today ✦",
-  "Your destiny was written in the cosmos 🔮",
-  "The oracle never lies. This was meant for you.",
-  "Fate spun the wheel. You just followed. ✨",
-  "Today's adventure was always yours to claim.",
-  "The universe conspired. This is your sign.",
-  "Not random. Destined. 🌙",
+   "Still scrolling? This took less time than that.",
+    "Your thumb needs a break. Your brain needs this.",
+    "Bored of scrolling? This is more fun than the next 10 reels.",
+    "You've scrolled enough today. Try this instead.",
+    "This beats another 20 minutes of mindless scrolling.",
+    "Stop scrolling. Start spinning.",
+    "One spin > one more hour of scrolling.",
+    "Feeling bored? The wheel fixes that faster than your feed does.",
+    "Your feed is boring you. This won't.",
+    "Close the app you're doomscrolling on. Open this one instead.",
+    "Scrolling gave you nothing today. This might give you a story.",
+    "You didn't open this app to scroll. You opened it to do something.",
+    "Bored isn't a mood. It's a sign to spin.",
+    "The algorithm doesn't know you. The wheel might.",
+    "This is the main character energy your feed keeps promising you."
 ];
 
 const dailyMessage = ORACLE_MESSAGES[new Date().getDate() % ORACLE_MESSAGES.length];
@@ -226,10 +234,10 @@ const dailyMessage = ORACLE_MESSAGES[new Date().getDate() % ORACLE_MESSAGES.leng
             cursor: 'pointer',
           }}
         >
-          ← Back
+          ← Back to Spin
         </motion.button>
 
-        <motion.button
+        {/* <motion.button
           whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
           onClick={downloadImage}
           style={{
@@ -243,7 +251,7 @@ const dailyMessage = ORACLE_MESSAGES[new Date().getDate() % ORACLE_MESSAGES.leng
           }}
         >
           ↓ Save
-        </motion.button>
+        </motion.button> */}
 
         <motion.button
           whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}

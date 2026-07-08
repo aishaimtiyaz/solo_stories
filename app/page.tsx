@@ -178,7 +178,7 @@ export default function Home() {
           >
             <ShareCard
               date={selectedDate}
-              onBack={() => setView('checklist')}
+              onBack={() => setView('spinner')}
             />
           </motion.div>
         )}

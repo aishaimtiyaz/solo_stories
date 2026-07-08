@@ -5,6 +5,7 @@ import { saveContact, loadState } from '@/utils/localStorage';
 interface Props {
   onClose: () => void;
   onSaved: (data: { name?: string; phone?: string }) => void;
+  onSaved: (data: { name?: string; phone?: string }) => void;
 }
 
 export default function ContactModal({ onClose, onSaved }: Props) {
@@ -94,7 +95,7 @@ export default function ContactModal({ onClose, onSaved }: Props) {
         {error && <p className="text-sm text-red-500 mb-2">{error}</p>}
 
         <div className="flex gap-2 mt-2">
-          <button onClick={onClose} className="flex-1 px-3 py-2 rounded bg-gray-100 dark:bg-gray-800">Skip</button>
+          <button onClick={onClose} className="flex-1 px-3 py-2 rounded bg-gray-100 dark:bg-gray-800">Back</button>
           <button onClick={submit} disabled={loading} className="flex-1 px-3 py-2 rounded bg-purple-600 text-white font-semibold">{loading ? 'Saving...' : 'Continue'}</button>
         </div>
       </div>
