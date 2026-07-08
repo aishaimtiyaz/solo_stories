@@ -5,7 +5,6 @@ import { saveContact, loadState } from '@/utils/localStorage';
 interface Props {
   onClose: () => void;
   onSaved: (data: { name?: string; phone?: string }) => void;
-  onSaved: (data: { name?: string; phone?: string }) => void;
 }
 
 export default function ContactModal({ onClose, onSaved }: Props) {
