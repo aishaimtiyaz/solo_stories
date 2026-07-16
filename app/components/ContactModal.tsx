@@ -16,7 +16,7 @@ export default function ContactModal({ onClose, onSaved }: Props) {
   const submit = async () => {
     setError(null);
     if (!name.trim() || !phone.trim()) {
-      setError('Please enter both your name and phone number.');
+      setError('Please enter both your name and phone.');
       return;
     }
     setLoading(true);
@@ -39,11 +39,17 @@ export default function ContactModal({ onClose, onSaved }: Props) {
 
       // send to server API (which can forward to Google Apps Script)
       try {
-        await fetch('/api/submit', {
+        const response = await fetch('/api/submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload),
         });
+        const result = await response.json();
+
+        if (!response.ok) {
+          throw new Error(result.message || "Failed to save");
+        }
+
       } catch (e) {
         // ignore network errors; server may be unconfigured
         console.warn('submit failed', e);
@@ -78,8 +84,12 @@ export default function ContactModal({ onClose, onSaved }: Props) {
         <label className="block text-xs text-gray-500 mb-1">Name</label>
         <input value={name} onChange={(e) => setName(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="Your name" />
 
+        {/* <label className="block text-xs text-gray-500 mb-1">Email</label>
+        <input type="string" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="you@example.com" /> */}
+
+        
         <label className="block text-xs text-gray-500 mb-1">Phone</label>
-        <input type="phone" value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="your phone number" />
+        <input type="string" value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="eg:9162458575" />
 
         {error && <p className="text-sm text-red-500 mb-2">{error}</p>}
 
