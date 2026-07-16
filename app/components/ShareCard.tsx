@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { toPng, toBlob } from 'html-to-image';
 import ContactModal from './ContactModal';
-import { loadState } from '@/utils/localStorage';
+import { is_user_exist, loadState } from '@/utils/localStorage';
 
 interface ShareCardProps {
   date: {
@@ -22,6 +22,12 @@ export default function ShareCard({ date, onBack }: ShareCardProps) {
   const [pendingAction, setPendingAction] = useState<'download' | 'share' | null>(null);
 
   const handleShareClick = () => {
+    const isAlreadySaved = is_user_exist();
+    console.log('isAlreadySaved', isAlreadySaved);
+    if(isAlreadySaved){
+      shareImage();
+      return;
+    }
     setPendingAction('share');
     setShowContact(true);
   };
@@ -277,7 +283,7 @@ const dailyMessage = ORACLE_MESSAGES[new Date().getDate() % ORACLE_MESSAGES.leng
           onClose={() => { setShowContact(false); setPendingAction(null); }}
           onSaved={() => {
             setShowContact(false);
-            if (pendingAction === 'download') downloadImage();
+            // if (pendingAction === 'download') downloadImage();
             if (pendingAction === 'share') shareImage();
             setPendingAction(null);
           }}

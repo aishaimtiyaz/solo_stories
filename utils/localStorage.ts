@@ -14,7 +14,12 @@ type SoloState = {
   contact?: Contact;
 };
 
+type userState = {
+  contact?: Contact;
+};
+
 const STORAGE_KEY = 'soloStoriesState';
+const user_exist = 'user_exist';
 
 function isClient() {
   return typeof window !== 'undefined' && typeof window.localStorage !== 'undefined';
@@ -32,6 +37,30 @@ export function loadState(): SoloState {
     return {} as SoloState;
   }
 }
+
+export function is_user_exist(): boolean {
+  if (!isClient()) return false;
+  try {
+    const raw = localStorage.getItem(user_exist);
+    // console.debug('[localStorage] is_user_exist raw:', raw);
+    if (!raw) return false;
+    return JSON.parse(raw) as boolean;
+  } catch (err) {
+    console.warn('Failed to parse storage', err);
+    return false;
+  }
+}
+
+export function saveUser(state: userState) {
+  if (!isClient()) return;
+  try {
+    console.debug('[localStorage] saveState', state);
+    localStorage.setItem(user_exist, JSON.stringify(state));
+  } catch (err) {
+    console.warn('Failed to save state', err);
+  }
+}
+  
 
 export function saveState(state: SoloState) {
   if (!isClient()) return;
@@ -86,6 +115,7 @@ export function saveContact(contact: Contact) {
 
 // remove task by numeric dateId or by title string (for older entries)
 export function removeTask(identifier?: number | string) {
+  console.log("identifier",identifier)
   const state = loadState();
   if (!state) return;
   localStorage.removeItem(STORAGE_KEY)

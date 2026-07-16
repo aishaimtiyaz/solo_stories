@@ -1,21 +1,21 @@
 [
   {
-    "title": "Coffee Reflection Date",
-    "effort": "low",
-    "mood": "cozy",
-    "duration": "30-60 min",
-    "budget": "₹100-300",
-    "description": "A fun solo mission designed to create a memorable experience around coffee reflection date.",
-    "steps": [
-      "Choose a time slot for the quest",
-      "Prepare one small item you may need",
-      "Complete the main activity",
-      "Take a photo or note a memorable moment",
-      "Reflect on what you enjoyed",
-      "Mark the quest as completed"
-    ],
-    "chaos": "normal"
-  },
+  "title": "Coffee Reflection Date",
+  "effort": "low",
+  "mood": "cozy",
+  "duration": "30-60 min",
+  "budget": "₹100-300",
+  "description": "Treat yourself to a peaceful coffee break where the only company you need is your own thoughts. Slow down, sip mindfully, and reconnect with yourself.",
+  "steps": [
+    "Visit a cozy café or prepare your favorite coffee at home.",
+    "Choose a quiet seat by a window or somewhere with a relaxing view.",
+    "Keep your phone away and enjoy your drink slowly, noticing the aroma and taste.",
+    "Reflect on three things you're grateful for and one thing you're looking forward to.",
+    "Write a few thoughts, ideas, or feelings in your notes or journal.",
+    "Take a photo of your coffee or favorite moment and mark the quest as completed."
+  ],
+  "chaos": "normal"
+},
   {
     "title": "Hot Chocolate Window Date",
     "effort": "low",
@@ -68,22 +68,22 @@
     "chaos": "normal"
   },
   {
-    "title": "People Watching Mission",
-    "effort": "low",
-    "mood": "creative",
-    "duration": "30-60 min",
-    "budget": "₹100-300",
-    "description": "A fun solo mission designed to create a memorable experience around people watching mission.",
-    "steps": [
-      "Choose a time slot for the quest",
-      "Prepare one small item you may need",
-      "Complete the main activity",
-      "Take a photo or note a memorable moment",
-      "Reflect on what you enjoyed",
-      "Mark the quest as completed"
-    ],
-    "chaos": "normal"
-  },
+  "title": "People Watching Mission",
+  "effort": "low",
+  "mood": "creative",
+  "duration": "30-60 min",
+  "budget": "₹100-300",
+  "description": "Grab a drink, find a cozy spot, and observe the little stories unfolding around you. Let your imagination turn ordinary moments into memorable ones.",
+  "steps": [
+    "Find a comfortable spot at a café, park, or public square.",
+    "Order your favorite drink or snack and settle in without using your phone.",
+    "Observe at least five different people and imagine a unique story about each of them.",
+    "Notice interesting details like conversations, outfits, expressions, or interactions.",
+    "Write down your favorite observation or create a funny backstory in your notes.",
+    "Reflect on how differently people experience the same place and mark the quest as completed."
+  ],
+  "chaos": "normal"
+},
   {
     "title": "Park Bench Journaling",
     "effort": "low",

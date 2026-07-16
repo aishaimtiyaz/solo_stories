@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { saveContact, loadState } from '@/utils/localStorage';
+import { saveContact, loadState, saveUser } from '@/utils/localStorage';
 
 interface Props {
   onClose: () => void;
@@ -22,7 +22,7 @@ export default function ContactModal({ onClose, onSaved }: Props) {
     setLoading(true);
     try {
       // save locally
-      saveContact({ name: name.trim(), phone: phone.trim() });
+      saveUser({ contact: { name: name.trim(), phone: phone.trim() } });
 
       // prepare payload with active task if present
       const state = loadState();
