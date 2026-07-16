@@ -15,8 +15,8 @@ export default function ContactModal({ onClose, onSaved }: Props) {
 
   const submit = async () => {
     setError(null);
-    if (!name.trim() || !phone.trim()) {
-      setError('Please enter both your name and phone.');
+    if (!name.trim() || !phone.trim() || phone.trim().length !== 10) {
+      setError('Please enter both your name and a valid 10-digit phone number.');
       return;
     }
     setLoading(true);
@@ -66,7 +66,7 @@ export default function ContactModal({ onClose, onSaved }: Props) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
       <div className="absolute inset-0 bg-black/40" onClick={onClose} />
       <div className="bg-white dark:bg-gray-900 rounded-xl shadow-2xl p-6 w-96 z-10">
         <div className="flex items-center gap-3 mb-4">
@@ -89,7 +89,8 @@ export default function ContactModal({ onClose, onSaved }: Props) {
 
         
         <label className="block text-xs text-gray-500 mb-1">Phone</label>
-        <input type="string" value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="eg:9162458575" />
+        <input type="tel" minLength={10} maxLength={10} value={phone} onChange={(e) =>setPhone(e.target.value.replace(/\D/g, "").slice(0, 10))
+  } className="w-full mb-3 p-2 rounded bg-gray-50 dark:bg-gray-800" placeholder="eg:9162458575" />
 
         {error && <p className="text-sm text-red-500 mb-2">{error}</p>}
 
